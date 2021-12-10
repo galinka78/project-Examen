@@ -13,7 +13,7 @@
 }
 html {
     font-family: 'Ubuntu-Regular', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
 }
 strong, h1, h2, h3, h4, h5, h6 {
     font-family:'Ubuntu-Bold', sans-serif;
@@ -34,6 +34,13 @@ strong, h1, h2, h3, h4, h5, h6 {
 .btn--primary {
     background-color: orangered; 
 }
+.btn--secondary {
+    background: transparent;
+    border: 1px solid orangered;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
 .container {
     max-width: 1200px;
     width: 100%;
@@ -49,6 +56,7 @@ strong, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 100px;
 }
 .section_title {
+    text-align: center;
     color: orangered;
 }
 .header {
@@ -121,10 +129,78 @@ strong, h1, h2, h3, h4, h5, h6 {
 .algoritm_block {
     flex-direction: column;
 }
+/* секция информация о компании */
+.info {
+    background-color: rgba(0, 0, 0, 1);
+    color: aliceblue;
+    font-size: 18px;
+}
+.info-section_block {
+    flex-direction: column;
+}
+.target {
+    font-size: 24px;
+    color: orangered;
+    margin-bottom: 10px;
+
+}
+.target > strong {
+    color: aqua;
+}
+.info_block {
+    flex-direction: column;
+  
+}
+.info .section_title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+}
+.comments_block {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.comment_card {
+    width: 25%;
+}
+.card_img-block > img {
+    width: 100%;
+}
+.card_desc {
+    text-align: justify;
+}
+/* настройка формы */
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_input {
+    max-width: 350px;
+    width: 100%;
+}
+.input_group {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.form > .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Подвал сайта */
 .footer {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .footer_navigation {
     max-width: 40%;
