@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('../fonts/Ubunto/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('../fonts/Ubunto/Ubuntu-Bold.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Ubuntu-Regular', sans-serif;
+    font-size: 14px;
+}
+strong, h1, h2, h3, h4, h5, h6 {
+    font-family:'Ubuntu-Bold', sans-serif;
+}
+.input {
+    font-size: 18px;
+    outline: none;
+    padding: 10px 10px; 
+    color: orangered;
+}
+.btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn--primary {
+    background-color: orangered; 
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.flex-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section_title {
+    color: orangered;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 999;
+}
+.header a, .footer a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.logo {
+    color: aqua;
+}
+.navigation {
+    max-width: 50%;
+    width: 100%;
+}
+.nav_link {
+    color: orangered;
+}
+.promo {
+    position: relative;
+    margin-top: -61px;
+    padding-top: 400px;
+    padding-bottom: 350px;
+    background: url('../img/bkgi.jpg') no-repeat center / cover;
+}
+.promo::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0, 0.4)
+
+}
+.promo_block {
+    position: relative;
+    z-index: 998;
+    max-width: 650px;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 250px;
+    color: aqua;
+}
+.promo_title {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.promo_subtitle, .section_title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.promo_text, list_item {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.percent {
+    font-size: 28px;
+    color: orangered;
+}
+.algoritm_block {
+    flex-direction: column;
+}
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+.footer_navigation {
+    max-width: 40%;
+}
+.footer_form {
+    max-width: 40%;
+    width: 100%;
+}
+.footer_email {
+    max-width: 60%;
+    width: 100%;
+}
