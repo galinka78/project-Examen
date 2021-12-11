@@ -30,15 +30,17 @@ strong, h1, h2, h3, h4, h5, h6 {
     outline: none;
     cursor: pointer;
     font-size: 18px;
+    text-decoration: none;
+    color: black;
 }
 .btn--primary {
+    color: white;
     background-color: orangered; 
 }
 .btn--secondary {
     background: transparent;
     border: 1px solid orangered;
-    text-decoration: none;
-    color: black;
+    
     margin-top: 20px;
 }
 .container {
@@ -212,4 +214,48 @@ strong, h1, h2, h3, h4, h5, h6 {
 .footer_email {
     max-width: 60%;
     width: 100%;
+}
+
+/* настройка страницы result */
+.result {
+    position: relative;
+    padding-top: 200px;
+    background: url('../img/bkgi.jpg') no-repeat center / cover;
+    height: 100vh;
+}
+.result::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0, 0.4);
+
+}
+.result_block {
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: start;
+    color: aliceblue;
+}
+.result_search {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-size: 16px;
+    background:rgb(0, 0, 0, 0.4);
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+}
+.group_result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
 }
