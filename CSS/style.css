@@ -220,8 +220,9 @@ strong, h1, h2, h3, h4, h5, h6 {
 .result {
     position: relative;
     padding-top: 200px;
-    background: url('../img/bkgi.jpg') no-repeat center / cover;
-    height: 100vh;
+    min-height: 100vh;
+    background: url('../img/bkgi.jpg') no-repeat center / cover fixed;
+    
 }
 .result::after {
     position: absolute;
@@ -231,7 +232,6 @@ strong, h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     background:rgb(0, 0, 0, 0.4);
-
 }
 .result_block {
     position: relative;
@@ -256,6 +256,70 @@ strong, h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+/* настройка страницы order */
+.order {
+    position: relative;
+    padding-top: 200px;
+    min-height: 100vh;
+    background: url('../img/bkgi.jpg') no-repeat center / cover fixed;
+    color: aliceblue;
+}
+.order::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0, 0.4);
+}
+.order_block {
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    align-items: start;
+}
+.rows_block {
+    background: rgba(200, 200, 200, 0.3);
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    padding: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 32px;
+    max-width: 50%;
+}
+.desc_order {
+    font-size: 26px;
+    max-width: 50%;
+}
+.inputs {
+    justify-content: start;
 
+}
+.order_input {
+    margin-left: 25%;
+    margin-right: 15px;
+}
+.inputs * {
+    cursor: pointer;
 }
